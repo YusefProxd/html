@@ -1,2 +1,74 @@
 body{
-            background-color: skyblue;}
+            background-color: rgb(73, 73, 123);
+        }
+
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+body {
+font-family: Arial, sans-serif;
+line-height: 1.6;
+background-color: #f4f4f4;
+color: #333;
+padding: 20px;
+}
+header {
+background-color: #0bcbec;
+color: #73ff00;
+padding: 20px;
+text-align: center;
+border-radius: 6px 6px 0 0;
+}
+header h1{
+    margin-bottom: 10px;
+}
+nav ul {
+list-style: none; /* Quita los puntos o viñetas de la lista */
+margin-top: 20px; /* Agrega un margen superior de 20px */
+display: flex; /* Convierte el contenedor en un flexbox */
+justify-content: center; /* Centra horizontalmente los elementos dentro del flex */
+gap: 30px; /* Deja un espacio de 20px entre los elementos */
+}
+nav a {
+color: #e70b0b; /* Los enlaces serán de color blanco */
+text-decoration: none;
+font-weight: bold;
+transition: 0.3s;
+}
+nav a:hover {
+color: #1abc9c; /* verde azulado */
+text-decoration: underline;
+}
+section {
+background: #fff;
+margin: 20px auto;
+padding: 20px;
+max-width: 800px;
+border-radius: 8px;
+box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+}
+section h1{
+margin-bottom: 10px;
+font-size: 20px;
+color: #167fe7;
+}
+section h2 {
+margin-bottom: 15px;
+font-size: 22px;
+color: #e0d31e;
+border-bottom: 2px solid #1abc9c; /* línea debajo del título */
+display: inline-block;
+padding-bottom: 5px;
+}
+article {
+margin-bottom: 20px; /* Agrega un espacio de 20px debajo de cada <article> */}
+footer {
+text-align: center;
+padding: 15px;
+background-color: #2ebe7b;
+color: #fff;
+margin-top: 40px;
+border-radius: 0 0 6px 6px;
+}
