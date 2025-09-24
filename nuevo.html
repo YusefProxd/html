@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portfolio</title>
+  <link rel="stylesheet" href="nuevo.css">
+  <!-- FontAwesome para íconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+  <!-- Encabezado -->
+  <header class="header">
+    <h1>Mi Portfolio: YUSEF LLALLAHUI</h1>
+    <nav class="top-nav">
+      <a href="index.html"><i class="fa-solid fa-house"></i> Maquetación</a>
+      <a href="pagina1.html"><i class="fa-brands fa-css3-alt"></i> pagina1</a>
+      <a href="pagina2.html"><i class="fa-solid fa-code"></i> pagina2</a>
+      <a href="pagina3.html"><i class="fa-solid fa-at"></i> pagina3</a>
+      <a href="pagina4.html"><i class="fa-brands fa-js"></i> pagina4</a>
+    </nav>
+  </header>
+
+  <!-- Contenedor principal -->
+  <div class="container">
+    <!-- Menú lateral -->
+    <aside class="sidebar">
+      <h2 class="menu-title"><i class="fa-solid fa-bars"></i> Menú</h2>
+      <ul>
+        <li><button onclick="mostrarSeccion('inicio')"><i class="fa-solid fa-house"></i> Maquetación</button></li>
+        <li><button onclick="mostrarSeccion('quien')"><i class="fa-solid fa-user"></i> Quien soy</button></li>
+        <li><button onclick="mostrarSeccion('css3')"><i class="fa-brands fa-css3-alt"></i> CSS3</button></li>
+        <li><button onclick="mostrarSeccion('js')"><i class="fa-brands fa-js"></i> JavaScript</button></li>
+      </ul>
+    </aside>
+
+    <!-- Contenido dinámico -->
+    <main class="content">
+      <section id="inicio" class="seccion activa">
+        <h2>Bienvenidos a Mi Portfolio</h2>
+        <p>Selecciona un tema del menú lateral para explorar mi trabajo y habilidades.</p>
+        <div class="box">
+          <h3>¡Conóceme mejor!</h3>
+          <p>Utiliza el menú de la izquierda para navegar entre las diferentes secciones y descubrir más sobre mis proyectos y experiencia.</p>
+        </div>
+      </section>
+
+      <section id="quien" class="seccion">
+        <h2>¿Quién soy?</h2>
+        <p>Soy Yusef LLallahui, estudiante de sistemas apasionado por el desarrollo web y la programación.</p>
+      </section>
+
+      <section id="css3" class="seccion">
+        <h2>Mis conocimientos en CSS3</h2>
+        <p>Aquí muestro ejemplos de diseño y estilos que he trabajado con CSS3.</p>
+      </section>
+
+      <section id="js" class="seccion">
+        <h2>JavaScript</h2>
+        <p>Explora mis proyectos en JavaScript, incluyendo interactividad, animaciones y lógica de aplicaciones web.</p>
+      </section>
+    </main>
+  </div>
+
+  <!-- Script para cambiar secciones -->
+  <script>
+    function mostrarSeccion(id) {
+      // ocultar todas las secciones
+      document.querySelectorAll('.seccion').forEach(sec => sec.classList.remove('activa'));
+      // mostrar solo la elegida
+      document.getElementById(id).classList.add('activa');
+    }
+  </script>
+</body>
+</html>

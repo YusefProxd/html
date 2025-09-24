@@ -1,0 +1,101 @@
+@media (max-width: 600px) {
+
+      .stage {
+
+        height: 150px;
+
+      }
+
+      
+
+      .layer:after {
+
+        font-size: 60px;
+
+        top: 25px;
+
+      }
+
+      
+
+      .nav__list {
+
+        flex-direction: column;
+
+        width: 100%;
+
+        max-width: 360px;
+
+      }
+
+      
+
+      .nav__item {
+
+        border-left: none;
+
+        border-top: 1px solid var(--border);
+
+      }
+
+      
+
+      .nav__item:first-child {
+
+        border-top: none;
+
+      }
+
+      
+
+      .nav__link {
+
+        padding: 14px 18px;
+
+        text-align: center;
+
+      }
+
+      
+
+      .gradient-examples {
+
+        padding: 0.5rem;
+
+      }
+
+      
+
+      .example {
+
+        font-size: 1rem;
+
+        min-height: 120px;
+
+      }
+
+      
+
+      h1 {
+
+        font-size: 1.5rem;
+
+      }
+
+      
+
+      .social-icons {
+
+        gap: 20px;
+
+      }
+
+      
+
+      .fa-whatsapp, .fa-github {
+
+        font-size: 35px;
+
+      }
+
+    }

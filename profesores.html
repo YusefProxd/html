@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Encargados</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <link rel="stylesheet" href="movil.css">
+</head>
+<body class="bg-gray-900">
+
+    <div class="hidden lg:flex lg:gap-x-12">
+        <a href="tailwind.html" class="text-sm/6 font-semibold text-white">INICIO</a>
+        <a href="estudiantes.html" class="text-sm/6 font-semibold text-white">estudiantes</a>
+        <a href="#" class="text-sm/6 font-semibold text-white">Marketplace</a>
+        <a href="#" class="text-sm/6 font-semibold text-white">Company</a>
+      </div>
+
+      <el-dialog>
+      <dialog id="mobile-menu" class="backdrop:bg-transparent lg:hidden">
+        <div tabindex="0" class="fixed inset-0 focus:outline-none">
+          <el-dialog-panel class="fixed inset-y-0 right-0 z-50 w-full overflow-y-auto bg-gray-900 p-6 sm:max-w-sm sm:ring-1 sm:ring-gray-100/10">
+            <div class="flex items-center justify-between">
+              <a href="#" class="-m-1.5 p-1.5">
+                <span class="sr-only">Your Company</span>
+                <img src="imagenes/uni.png" alt="" class="h-8 w-auto" />
+              </a>
+              <button type="button" command="close" commandfor="mobile-menu" class="-m-2.5 rounded-md p-2.5 text-gray-200">
+                <span class="sr-only">Close menu</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="M6 18 18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </button>
+            </div>
+            <div class="mt-6 flow-root">
+              <div class="-my-6 divide-y divide-white/10">
+                <div class="space-y-2 py-6">
+                  <a href="index.html" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">INICIO</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Features</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Marketplace</a>
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2 text-base/7 font-semibold text-white hover:bg-white/5">Company</a>
+                </div>
+                <div class="py-6">
+                  <a href="#" class="-mx-3 block rounded-lg px-3 py-2.5 text-base/7 font-semibold text-white hover:bg-white/5">Log in</a>
+                </div>
+              </div>
+            </div>
+          </el-dialog-panel>
+        </div>
+      </dialog>
+    </el-dialog>
+
+
+  <!-- Team Section -->
+  <div class="py-24 sm:py-32">
+    <div class="mx-auto max-w-7xl px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold tracking-tight text-white sm:text-4xl">Meet our team</h2>
+      <p class="mt-6 text-lg leading-8 text-gray-400">
+        We're a dynamic group of individuals who are passionate about what we do and dedicated 
+        to delivering the best results for our clients.
+      </p>
+    </div>
+
+    <div class="mx-auto mt-16 grid max-w-7xl gap-x-8 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 lg:px-8">
+      <!-- Member Card -->
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-lg">
+        <img class="mx-auto h-32 w-32 rounded-full border-4 border-gray-700" 
+             src="imagenes/prosor.PNG" 
+             alt="Jesus Andres Lujan Carrion ">
+        <h3 class="mt-4 text-lg font-semibold text-white">Hilario</h3>
+        <p class="text-sm text-gray-400">Prosor de Vagos</p>
+        <div class="mt-4 flex justify-center space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <!-- X icon -->
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26L22.5 21.75h-6.531l-5.118-6.646-5.857 6.646H2.25l7.73-8.77L2.25 2.25h6.75l4.646 6.063 4.598-6.063z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <!-- LinkedIn icon -->
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V7H0v17zM7.5 7h4.8v2.5h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.5c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 1.9-2.9 4V24h-5V7z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Puedes duplicar este bloque para más miembros -->
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-lg">
+        <img class="mx-auto h-32 w-32 rounded-full border-4 border-gray-700" 
+             src="imagenes/12.PNG" 
+             alt="Junior Rocha Luna">
+        <h3 class="mt-4 text-lg font-semibold text-white">Junior Rocha Luna</h3>
+        <p class="text-sm text-gray-400">Profesor de Desarrollo Web</p>
+        <div class="mt-4 flex justify-center space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26L22.5 21.75h-6.531l-5.118-6.646-5.857 6.646H2.25l7.73-8.77L2.25 2.25h6.75l4.646 6.063 4.598-6.063z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V7H0v17zM7.5 7h4.8v2.5h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.5c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 1.9-2.9 4V24h-5V7z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-lg">
+        <img class="mx-auto h-32 w-32 rounded-full border-4 border-gray-700" 
+             src="imagenes/13.PNG" 
+             alt="Floyd Miles">
+        <h3 class="mt-4 text-lg font-semibold text-white">Jose</h3>
+        <p class="text-sm text-gray-400">Profesor de Futsal</p>
+        <div class="mt-4 flex justify-center space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26L22.5 21.75h-6.531l-5.118-6.646-5.857 6.646H2.25l7.73-8.77L2.25 2.25h6.75l4.646 6.063 4.598-6.063z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V7H0v17zM7.5 7h4.8v2.5h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.5c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 1.9-2.9 4V24h-5V7z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-lg">
+        <img class="mx-auto h-32 w-32 rounded-full border-4 border-gray-700" 
+             src="imagenes/15.PNG" 
+             alt="Junior Rocha Luna">
+        <h3 class="mt-4 text-lg font-semibold text-white">Andres</h3>
+        <p class="text-sm text-gray-400">Profesor de Matematicas</p>
+        <div class="mt-4 flex justify-center space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26L22.5 21.75h-6.531l-5.118-6.646-5.857 6.646H2.25l7.73-8.77L2.25 2.25h6.75l4.646 6.063 4.598-6.063z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V7H0v17zM7.5 7h4.8v2.5h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.5c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 1.9-2.9 4V24h-5V7z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-lg">
+        <img class="mx-auto h-32 w-32 rounded-full border-4 border-gray-700" 
+             src="imagenes/jean.jpg" 
+             alt="Junior Rocha Luna">
+        <h3 class="mt-4 text-lg font-semibold text-white">jean</h3>
+        <p class="text-sm text-gray-400">Profesor de Left-</p>
+        <div class="mt-4 flex justify-center space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26L22.5 21.75h-6.531l-5.118-6.646-5.857 6.646H2.25l7.73-8.77L2.25 2.25h6.75l4.646 6.063 4.598-6.063z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V7H0v17zM7.5 7h4.8v2.5h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.5c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 1.9-2.9 4V24h-5V7z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="bg-gray-800 rounded-xl p-6 text-center shadow-lg">
+        <img class="mx-auto h-32 w-32 rounded-full border-4 border-gray-700" 
+             src="imagenes/lazaro.PNG" 
+             alt="Junior Rocha Luna">
+        <h3 class="mt-4 text-lg font-semibold text-white">Pipe</h3>
+        <p class="text-sm text-gray-400">Profesor de Fisica</p>
+        <div class="mt-4 flex justify-center space-x-4">
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M18.244 2.25h3.308l-7.227 8.26L22.5 21.75h-6.531l-5.118-6.646-5.857 6.646H2.25l7.73-8.77L2.25 2.25h6.75l4.646 6.063 4.598-6.063z"/>
+            </svg>
+          </a>
+          <a href="#" class="text-gray-400 hover:text-white">
+            <svg class="h-5 w-5" fill="currentColor" viewBox="0 0 24 24">
+              <path d="M4.98 3.5C4.98 4.88 3.88 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1 4.98 2.12 4.98 3.5zM0 24h5V7H0v17zM7.5 7h4.8v2.5h.07c.67-1.27 2.3-2.6 4.73-2.6 5.06 0 6 3.33 6 7.66V24h-5v-7.5c0-1.8-.03-4.1-2.5-4.1-2.5 0-2.9 1.9-2.9 4V24h-5V7z"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</body>
+</html>
