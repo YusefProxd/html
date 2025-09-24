@@ -1,125 +1,245 @@
-html,
-.box {
-	display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 250px;
-    width: 100%;
-    margin: 0 auto;
-}
 
-.box .inner {
-	width: 400px;
-	height: 200px;
-	line-height: 200px;
-	font-size: 4em;
-	font-family: sans-serif;
-	font-weight: bold;
-	white-space: nowrap;
-	overflow: hidden;
-}
+        /* Estilos ajustados para un look más masculino: colores oscuros, robustos y minimalistas */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-.box .inner:first-child {
-	background-color: indianred;
-	color: darkred;
-	transform-origin: right;
-	transform: perspective(100px) rotateY(-15deg);
-}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Fuente limpia y bold */
+            line-height: 1.6;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); /* Gradiente oscuro gris-negro para vibe industrial */
+            color: #e0e0e0; /* Texto claro para contraste */
+            padding: 20px;
+            min-height: 100vh;
+            width: 100%;
+        }
 
-.box .inner:last-child {
-	background-color: lightcoral;
-	color: antiquewhite;
-	transform-origin: left;
-	transform: perspective(100px) rotateY(15deg);
-}
+        /* Sección del marquee animado - Colores más intensos y oscuros */
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 250px;
+            width: 100%;
+            margin: 20px auto;
+            perspective: 1000px;
+        }
 
-.box .inner span {
-	position: absolute;
-	animation: marquee 5s linear infinite;
-}
+        .box .inner {
+            width: 400px;
+            height: 200px;
+            line-height: 200px;
+            font-size: 4em;
+            font-family: 'Arial Black', sans-serif;
+            font-weight: bold;
+            white-space: nowrap;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px; /* Bordes menos redondeados para look más angular */
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5); /* Sombra más intensa y oscura */
+        }
 
-.box .inner:first-child span {
-	animation-delay: 2.5s;
-	left: -100%;
-}
+        .box .inner:first-child {
+            background: linear-gradient(45deg, #8B0000, #DC143C); /* Rojo oscuro/crimson para fuerza */
+            color: #fff;
+            transform-origin: right;
+            transform: perspective(100px) rotateY(-15deg);
+            margin-right: 20px;
+        }
 
-@keyframes marquee {
-	from {
-		left: 100%;
-	}
+        .box .inner:last-child {
+            background: linear-gradient(45deg, #2F4F4F, #4682B4); /* Gris acero a azul navy para solidez */
+            color: #fff;
+            transform-origin: left;
+            transform: perspective(100px) rotateY(15deg);
+            margin-left: 20px;
+        }
 
-	to {
-		left: -100%;
-	}
-}
+        .box .inner span {
+            position: absolute;
+            animation: marquee 5s linear infinite;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8); /* Sombra más pesada para impacto */
+        }
 
-body {
-font-family: Arial, sans-serif;
-line-height: 1.6;
-background-color: #f4f4f4;
-color: #333;
-padding: 20px;
-height: 100%;
-width: 100%;
+        .box .inner:first-child span {
+            animation-delay: 2.5s;
+            left: -100%;
+        }
 
-}
-header {
-background-color: #0bcbec;
-color: #73ff00;
-padding: 20px;
-text-align: center;
-border-radius: 6px 6px 0 0;
-width: 100%;
+        @keyframes marquee {
+            from {
+                left: 100%;
+                transform: translateX(0);
+            }
+            to {
+                left: -100%;
+                transform: translateX(0);
+            }
+        }
 
-}
-header h1{
-    margin-bottom: 10px;
-}
-nav ul {
-list-style: none; /* Quita los puntos o viñetas de la lista */
-margin-top: 20px; /* Agrega un margen superior de 20px */
-display: flex; /* Convierte el contenedor en un flexbox */
-justify-content: center; /* Centra horizontalmente los elementos dentro del flex */
-gap: 30px; /* Deja un espacio de 20px entre los elementos */
-}
-nav a {
-color: #e70b0b; /* Los enlaces serán de color blanco */
-text-decoration: none;
-font-weight: bold;
-transition: 0.3s;
-}
-nav a:hover {
-color: #1abc9c; /* verde azulado */
-text-decoration: underline;
-}
-section {
-background: #fff;
-margin: 20px auto;
-padding: 20px;
-max-width: 800px;
-border-radius: 8px;
-box-shadow: 0 2px 6px rgba(0,0,0,0.2);
-}
-section h1{
-margin-bottom: 10px;
-font-size: 20px;
-color: #167fe7;
-}
-section h2 {
-margin-bottom: 15px;
-font-size: 22px;
-color: #e0d31e;
-border-bottom: 2px solid #1abc9c; /* línea debajo del título */
-display: inline-block;
-padding-bottom: 5px;
-}
-article {
-margin-bottom: 20px; /* Agrega un espacio de 20px debajo de cada <article> */}
-footer {
-text-align: center;
-padding: 15px;
-background-color: #2ebe7b;
-color: #fff;
-margin-top: 40px;
-border-radius: 0 0 6px 6px;
-}
+        /* Header con vibe dark y potente */
+        header {
+            background: linear-gradient(135deg, #0f0f0f 0%, #1a1a2e 100%); /* Negro profundo a azul oscuro */
+            color: #fff;
+            padding: 30px 20px;
+            text-align: center;
+            border-radius: 10px; /* Bordes más rectos */
+            width: 100%;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.6); /* Sombra más dramática */
+            animation: fadeInDown 1s ease-out;
+            border: 1px solid #333; /* Borde sutil para definición */
+        }
+
+        @keyframes fadeInDown {
+            from {
+                opacity: 0;
+                transform: translateY(-20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        header h1 {
+            margin-bottom: 10px;
+            font-size: 2.5em;
+            text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.7); /* Sombra más bold */
+            letter-spacing: 2px; /* Espaciado para look más masculino */
+        }
+
+        /* Navegación con estilo industrial */
+        nav ul {
+            list-style: none;
+            margin-top: 20px;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        nav a {
+            color: #e0e0e0; /* Gris claro */
+            text-decoration: none;
+            font-weight: bold;
+            padding: 12px 24px; /* Padding más grande para botones robustos */
+            border-radius: 5px; /* Menos redondeado */
+            transition: all 0.3s ease;
+            background: rgba(255, 255, 255, 0.1); /* Fondo semi-transparente oscuro */
+            border: 1px solid #555; /* Borde para definición */
+        }
+
+        nav a:hover {
+            color: #fff;
+            background: rgba(139, 0, 0, 0.6); /* Rojo oscuro en hover */
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            text-decoration: none;
+            border-color: #8B0000;
+        }
+
+        /* Secciones con tonos oscuros y minimalistas */
+        section {
+            background: #2a2a2a; /* Gris oscuro sólido */
+            margin: 20px auto;
+            padding: 30px;
+            max-width: 800px;
+            border-radius: 8px;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease;
+            border: 1px solid #444; /* Borde para separación */
+        }
+
+        section:hover {
+            transform: translateY(-5px);
+        }
+
+        section h1 {
+            margin-bottom: 10px;
+            font-size: 2em;
+            color: #4682B4; /* Azul acero */
+            text-align: center;
+            letter-spacing: 1px;
+        }
+
+        section h2 {
+            margin-bottom: 15px;
+            font-size: 1.5em;
+            color: #B22222; /* Rojo fuego oscuro */
+            border-bottom: 3px solid #4682B4; /* Línea azul acero */
+            display: inline-block;
+            padding-bottom: 8px;
+            position: relative;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: -3px;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background: linear-gradient(90deg, #4682B4, #B22222); /* Gradiente sobrio */
+        }
+
+        article {
+            margin-bottom: 20px;
+            padding: 15px;
+            background: #333; /* Gris medio para contraste */
+            border-left: 4px solid #4682B4; /* Borde lateral azul acero */
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
+
+        article:hover {
+            background: #3a3a3a; /* Cambio sutil a más oscuro */
+        }
+
+        /* Footer con cierre fuerte */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%); /* Similar al body para cohesión */
+            color: #e0e0e0;
+            margin-top: 40px;
+            border-radius: 8px;
+            box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.5);
+            border: 1px solid #444;
+        }
+
+        /* Responsividad para móviles */
+        @media (max-width: 768px) {
+            .box {
+                flex-direction: column;
+                height: auto;
+                gap: 20px;
+            }
+
+            .box .inner {
+                width: 100%;
+                max-width: 300px;
+                transform: none;
+            }
+
+            nav ul {
+                gap: 15px;
+            }
+
+            nav a {
+                padding: 10px 18px;
+                font-size: 0.9em;
+            }
+
+            header h1 {
+                font-size: 2em;
+            }
+
+            section {
+                padding: 20px;
+                margin: 10px;
+            }
+        }
+    
