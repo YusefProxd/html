@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <div class="min-h-screen flex items-center justify-center p-6">
+    <div class="bg-gray-800 rounded-lg grid md:grid-cols-2 w-full max-w-6xl shadow-lg">
+      
+      <!-- Left side: Info -->
+      <div class="p-10 bg-gradient-to-br from-gray-800 to-gray-900">
+        <h2 class="text-4xl font-bold mb-4">UNIVERSIDAD NACIONAL DE CAÑETE</h2>
+        <p class="mb-8 text-gray-400">
+          Ofrecemos formación profesional científica, tecnológica y humanista, con valores, principios, liderazgo, investigación y responsabilidad social.
+        </p>
+        <div class="space-y-4 text-gray-300 text-sm">
+          <div class="flex items-start">
+            <span class="mr-3 text-xl">🏢</span>
+            <div>
+              <p class="font-bold">Cañete-Lima</p>
+              <p>Av. Mariscal Benavides N° 1370 San Vicente</p>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <span class="mr-3 text-xl">📞</span>
+            <p>(+51) 949 027 044</p>
+          </div>
+          <div class="flex items-center">
+            <span class="mr-3 text-xl">✉️</span>
+            <p>tramite@undc.edu.pe</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right side: Form -->
+      <div class="p-10 bg-gray-900">
+        <form onsubmit="enviarCorreo(event)" class="space-y-6">
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div>
+              <label class="block mb-1 text-sm font-semibold"> NOMBRE </label>
+              <input id="nombre" type="text" class="w-full px-4 py-2 bg-gray-800 rounded text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+            <div>
+              <label class="block mb-1 text-sm font-semibold">APELLIDO</label>
+              <input id="apellido" type="text" class="w-full px-4 py-2 bg-gray-800 rounded text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+            </div>
+          </div>
+          <div>
+            <label class="block mb-1 text-sm font-semibold">Email</label>
+            <input id="email" type="email" class="w-full px-4 py-2 bg-gray-800 rounded text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          </div>
+          <div>
+            <label class="block mb-1 text-sm font-semibold"> TELEFONO </label>
+            <input id="telefono" type="text" class="w-full px-4 py-2 bg-gray-800 rounded text-white focus:outline-none focus:ring-2 focus:ring-indigo-500">
+          </div>
+          <div>
+            <label class="block mb-1 text-sm font-semibold">MENSAJE </label>
+            <textarea id="mensaje" rows="4" class="w-full px-4 py-2 bg-gray-800 rounded text-white focus:outline-none focus:ring-2 focus:ring-indigo-500"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="px-6 py-2 bg-indigo-600 hover:bg-indigo-700 rounded text-white font-semibold">
+              Send message
+            </button>
+          </div>
+        </form>
+        
+      </div>
+      
+    </div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+<script src="cliente.js"></script>
+</body>
+</html>
